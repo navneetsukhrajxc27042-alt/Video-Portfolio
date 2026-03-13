@@ -4,9 +4,13 @@ import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { portfolioProjects, graphicDesigns } from '../data/mock';
+import VideoModal from './VideoModal';
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('All');
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
   const allProjects = [...portfolioProjects, ...graphicDesigns];
 
   const categories = ['All', 'Short Ad', 'Motion Graphics', 'Documentary', 'Graphic Design'];
@@ -15,6 +19,16 @@ const Portfolio = () => {
     activeFilter === 'All'
       ? allProjects
       : allProjects.filter((project) => project.category === activeFilter);
+
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedProject(null), 300);
+  };
 
   return (
     <section id="portfolio" className="py-24 bg-black">
@@ -59,6 +73,7 @@ const Portfolio = () => {
           {filteredProjects.map((project) => (
             <Card
               key={project.id}
+              onClick={() => handleProjectClick(project)}
               className="bg-zinc-900 border-zinc-800 overflow-hidden group cursor-pointer hover:border-red-500 transition-all duration-300"
             >
               {/* Thumbnail */}
@@ -71,9 +86,17 @@ const Portfolio = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute inset-0 flex items-center justify-center">
                     {project.category === 'Graphic Design' ? (
-                      <ImageIcon className="text-white" size={48} />
+                      <div className="flex flex-col items-center gap-2">
+                        <ImageIcon className="text-white" size={48} />
+                        <span className="text-white text-sm font-medium">View Design</span>
+                      </div>
                     ) : (
-                      <Play className="text-white" size={48} />
+                      <div className="flex flex-col items-center gap-2">
+                        <div className="p-4 bg-red-600/90 rounded-full">
+                          <Play className="text-white fill-white" size={32} />
+                        </div>
+                        <span className="text-white text-sm font-medium">Watch Video</span>
+                      </div>
                     )}
                   </div>
                 </div>
@@ -92,7 +115,7 @@ const Portfolio = () => {
                 <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-gray-400 text-sm mb-4">{project.description}</p>
+                <p className="text-gray-400 text-sm mb-4 line-clamp-2">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.software.map((tool, index) => (
                     <span
@@ -115,6 +138,13 @@ const Portfolio = () => {
           </p>
         </div>
       </div>
+
+      {/* Video Modal */}
+      <VideoModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        project={selectedProject}
+      />
     </section>
   );
 };
