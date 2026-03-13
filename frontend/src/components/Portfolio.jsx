@@ -13,7 +13,7 @@ const Portfolio = () => {
   
   const allProjects = [...portfolioProjects, ...graphicDesigns];
 
-  const categories = ['All', 'Short Ad', 'Motion Graphics', 'Documentary', 'Graphic Design'];
+  const categories = ['All', 'Shorts', 'Motion Graphics', 'Documentary', 'Graphic Design'];
 
   const filteredProjects =
     activeFilter === 'All'

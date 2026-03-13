@@ -1,8 +1,18 @@
 export const portfolioProjects = [
   {
     id: 1,
-    title: "Tech Brand Commercial",
-    category: "Short Ad",
+    title: "STAN App Commercial",
+    category: "Shorts",
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/yfbazx0d_image.png",
+    videoUrl: "https://drive.google.com/file/d/1ZUHN0xfhLor8-x1dP-TPdzfdtkYihJeo/view?usp=drive_link",
+    description: "High-energy commercial spot for tech startup featuring dynamic motion graphics",
+    duration: "0:30",
+    software: ["Premiere Pro", "After Effects"]
+  },
+  {
+    id: 9,
+    title: "STAN App Commercial",
+    category: "Motion Graphics",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/yfbazx0d_image.png",
     videoUrl: "https://drive.google.com/file/d/1ZUHN0xfhLor8-x1dP-TPdzfdtkYihJeo/view?usp=drive_link",
     description: "High-energy commercial spot for tech startup featuring dynamic motion graphics",
@@ -11,38 +21,38 @@ export const portfolioProjects = [
   },
   {
     id: 2,
-    title: "Abstract Motion Graphics",
-    category: "Motion Graphics",
-    thumbnail: "https://images.unsplash.com/photo-1628494391268-c9935bc384d5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxtb3Rpb24lMjBncmFwaGljc3xlbnwwfHx8fDE3NzMzODAwNTV8MA&ixlib=rb-4.1.0&q=85",
-    videoUrl: "https://vimeo.com/148751763", // ← REPLACE with YOUR video link
-    description: "Vibrant motion design piece with fluid transitions and 3D elements",
-    duration: "1:15",
-    software: ["After Effects", "Cinema 4D"]
+    title: "At The Time - Short Edit",
+    category: "Shorts",
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/8tlwqv83_image.png",
+    videoUrl: "https://drive.google.com/file/d/1BOe_LLaFvJDebWjCUNGqpGx8OuVMWz5f/view?usp=drive_link",
+    description: "Dynamic split-screen storytelling with precise timing and transitions",
+    duration: "0:45",
+    software: ["Premiere Pro", "After Effects"]
   },
   {
     id: 3,
-    title: "Documentary: Urban Stories",
-    category: "Documentary",
-    thumbnail: "https://images.unsplash.com/photo-1759521528494-fd6ceb6049e3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwxfHxkb2N1bWVudGFyeSUyMGZpbG1tYWtpbmd8ZW58MHx8fHwxNzczMzgwMDgxfDA&ixlib=rb-4.1.0&q=85",
-    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // ← REPLACE with YOUR video link
-    description: "Cinematic documentary edit exploring city life and human connections",
-    duration: "12:45",
-    software: ["DaVinci Resolve", "Premiere Pro"]
+    title: "Disappointed Edit",
+    category: "Shorts",
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/c343qvgs_Screenshot%202026-03-13%20114340.png",
+    videoUrl: "https://drive.google.com/file/d/1cHjJnT5RNeVxuIFoJtz_9KN8b8aQh_vI/view?usp=sharing",
+    description: "Raw clip transformation with creative editing and motion graphics overlay",
+    duration: "0:35",
+    software: ["Premiere Pro", "After Effects"]
   },
   {
     id: 4,
-    title: "Product Launch Video",
-    category: "Short Ad",
-    thumbnail: "https://images.pexels.com/photos/11329815/pexels-photo-11329815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // ← REPLACE with YOUR video link
-    description: "Sleek product reveal with dynamic camera movements and color grading",
-    duration: "0:45",
+    title: "Loyalty & Security Edit",
+    category: "Shorts",
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/v7hjetne_image.png",
+    videoUrl: "https://drive.google.com/file/d/1hJwtLP4GxVnRVF0humjQwp20BQDHfXXm/view?usp=sharing",
+    description: "Engaging short-form content with text overlays and visual effects",
+    duration: "0:40",
     software: ["Premiere Pro", "After Effects"]
   },
   {
     id: 5,
     title: "Social Media Campaign",
-    category: "Short Ad",
+    category: "Shorts",
     thumbnail: "https://images.pexels.com/photos/3062545/pexels-photo-3062545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // ← REPLACE with YOUR video link
     description: "Fast-paced vertical video series for Instagram and TikTok",
