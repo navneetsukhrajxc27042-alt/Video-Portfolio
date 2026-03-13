@@ -3,7 +3,7 @@ export const portfolioProjects = [
     id: 1,
     title: "Tech Brand Commercial",
     category: "Short Ad",
-    thumbnail: "https://drive.google.com/thumbnail?id=1ZUHN0xfhLor8-x1dP-TPdzfdtkYihJeo&sz=w1920",
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/yfbazx0d_image.png",
     videoUrl: "https://drive.google.com/file/d/1ZUHN0xfhLor8-x1dP-TPdzfdtkYihJeo/view?usp=drive_link",
     description: "High-energy commercial spot for tech startup featuring dynamic motion graphics",
     duration: "0:30",
