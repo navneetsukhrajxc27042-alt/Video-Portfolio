@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
@@ -172,17 +172,6 @@ const VideoModal = ({ isOpen, onClose, project }) => {
             <div className="flex items-center justify-center h-full">
               <div className="text-center space-y-4">
                 <p className="text-gray-400">Video URL not available or invalid format</p>
-                {project.videoUrl && (
-                  <a
-                    href={project.videoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors"
-                  >
-                    <ExternalLink size={18} />
-                    Open in New Tab
-                  </a>
-                )}
               </div>
             </div>
           )}
@@ -206,21 +195,6 @@ const VideoModal = ({ isOpen, onClose, project }) => {
                   </span>
                 ))}
               </div>
-            </div>
-          )}
-
-          {/* External Link */}
-          {project.videoUrl && !isGraphicDesign && (
-            <div className="pt-2">
-              <a
-                href={project.videoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-red-500 hover:text-red-400 transition-colors"
-              >
-                <ExternalLink size={16} />
-                Watch on Original Platform
-              </a>
             </div>
           )}
         </div>
