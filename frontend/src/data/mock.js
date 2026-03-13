@@ -41,33 +41,33 @@ export const portfolioProjects = [
   },
   {
     id: 5,
-    title: "Social Media Campaign",
+    title: "Fries (BattleBucks Ad)",
     category: "Shorts",
-    thumbnail: "https://images.pexels.com/photos/3062545/pexels-photo-3062545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // ← REPLACE with YOUR video link
-    description: "Fast-paced vertical video series for Instagram and TikTok",
-    duration: "0:15",
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/29wn6u1g_image.png",
+    videoUrl: "https://drive.google.com/file/d/1E3yfQqLxWnpLj1Sc6lPq67gLFsqz8Fs6/view?usp=drive_link",
+    description: "Fast-paced commercial ad with dynamic transitions and modern editing",
+    duration: "0:25",
     software: ["Premiere Pro", "After Effects"]
   },
   {
     id: 6,
-    title: "Kinetic Typography",
-    category: "Motion Graphics",
-    thumbnail: "https://images.unsplash.com/photo-1699060463533-94ceb428c67f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHw0fHxtb3Rpb24lMjBncmFwaGljc3xlbnwwfHx8fDE3NzMzODAwNTV8MA&ixlib=rb-4.1.0&q=85",
-    videoUrl: "https://vimeo.com/148751763", // ← REPLACE with YOUR video link
-    description: "Animated typography piece with smooth transitions and sound design",
-    duration: "1:00",
-    software: ["After Effects", "Premiere Pro"]
+    title: "McDonald's Monopoly - For Faceless Channel",
+    category: "Documentary",
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/n5m1gzsg_image.png",
+    videoUrl: "https://drive.google.com/file/d/1ZArOYhORvo-_Yl8lgi_t5fZ7YLYDHl2z/view?usp=drive_link",
+    description: "Documentary-style video exploring the McDonald's monopoly story with cinematic editing",
+    duration: "8:30",
+    software: ["Premiere Pro", "After Effects"]
   },
   {
     id: 7,
-    title: "Environmental Documentary",
-    category: "Documentary",
-    thumbnail: "https://images.unsplash.com/photo-1594564424380-6a71104e2cff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwzfHxkb2N1bWVudGFyeSUyMGZpbG1tYWtpbmd8ZW58MHx8fHwxNzczMzgwMDgxfDA&ixlib=rb-4.1.0&q=85",
-    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // ← REPLACE with YOUR video link
-    description: "Long-form documentary about climate change with emotional storytelling",
-    duration: "18:30",
-    software: ["DaVinci Resolve", "Premiere Pro"]
+    title: "Velocity Edit",
+    category: "Shorts",
+    thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/6fmyljid_image.png",
+    videoUrl: "https://drive.google.com/file/d/1rNZIoQARA9aFurT8QjnBFf1R8EYLMOH8/view?usp=drive_link",
+    description: "High-speed editing showcase featuring car graphics and dynamic motion design",
+    duration: "0:30",
+    software: ["Premiere Pro", "After Effects"]
   },
   {
     id: 8,
