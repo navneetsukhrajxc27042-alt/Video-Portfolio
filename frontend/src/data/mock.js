@@ -21,7 +21,7 @@ export const portfolioProjects = [
   },
   {
     id: 3,
-    title: "Disappointed Edit",
+    title: "Lazy Assassin Edit Recreate",
     category: "Shorts",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/c343qvgs_Screenshot%202026-03-13%20114340.png",
     videoUrl: "https://drive.google.com/file/d/1cHjJnT5RNeVxuIFoJtz_9KN8b8aQh_vI/view?usp=sharing",
@@ -31,7 +31,7 @@ export const portfolioProjects = [
   },
   {
     id: 4,
-    title: "Loyalty & Security Edit",
+    title: "Fast-Paced YouTube Shorts Edit",
     category: "Shorts",
     thumbnail: "https://customer-assets.emergentagent.com/job_edit-showcase-pro-9/artifacts/v7hjetne_image.png",
     videoUrl: "https://drive.google.com/file/d/1hJwtLP4GxVnRVF0humjQwp20BQDHfXXm/view?usp=sharing",
