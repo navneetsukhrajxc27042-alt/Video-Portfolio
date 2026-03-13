@@ -1,16 +1,15 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Instagram, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const socialLinks = [
-    { icon: <Github size={20} />, url: '#', label: 'GitHub' },
-    { icon: <Linkedin size={20} />, url: '#', label: 'LinkedIn' },
-    { icon: <Twitter size={20} />, url: '#', label: 'Twitter' },
-    { icon: <Instagram size={20} />, url: '#', label: 'Instagram' },
-    { icon: <Mail size={20} />, url: '#', label: 'Email' }
-  ];
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <footer className="bg-zinc-950 border-t border-zinc-800">
@@ -27,18 +26,15 @@ const Footer = () => {
             </span>
           </div>
 
-          {/* Social Links */}
+          {/* Email Icon */}
           <div className="flex items-center gap-4">
-            {socialLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.url}
-                aria-label={link.label}
-                className="p-3 bg-zinc-900 border border-zinc-800 rounded-lg text-gray-400 hover:text-white hover:border-red-500 hover:bg-gradient-to-br hover:from-red-600/10 hover:to-red-500/10 transition-all duration-300"
-              >
-                {link.icon}
-              </a>
-            ))}
+            <button
+              onClick={scrollToContact}
+              aria-label="Contact via Email"
+              className="p-3 bg-zinc-900 border border-zinc-800 rounded-lg text-gray-400 hover:text-white hover:border-red-500 hover:bg-gradient-to-br hover:from-red-600/10 hover:to-red-500/10 transition-all duration-300"
+            >
+              <Mail size={20} />
+            </button>
           </div>
 
           {/* Copyright */}
